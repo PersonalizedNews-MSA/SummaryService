@@ -57,7 +57,7 @@ pipeline {
                             script: "gradle -q getAppVersion",
                             returnStdout: true
                     ).trim()
-
+                    det test = APP_NAME.toLowerCase()
                     DOCKER_IMAGE_NAME = "${DOCKER_REGISTRY}/${APP_NAME}:${APP_VERSION}"
 
                     sh "echo IMAGE_NAME is ${APP_NAME}"
