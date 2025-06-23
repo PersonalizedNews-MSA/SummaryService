@@ -26,7 +26,7 @@ pipeline {
     }
 
     environment {
-        GIT_URL = "https://github.com/PersonalizedNews-MSA/SummaryService.git"
+        GIT_URL = "https://github.com/PersonalizedNews-MSA/summaryservice.git"
         GITHUB_CREDENTIAL = "github-token"
         ARTIFACTS = "build/libs/**"
         DOCKER_REGISTRY = "wkdnffla3"
